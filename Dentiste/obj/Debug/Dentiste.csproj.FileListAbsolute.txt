@@ -1,0 +1,9 @@
+C:\Users\Mahaliana\Documents\GitHub\Dentiste\Dentiste\bin\Debug\Dentiste.exe.config
+C:\Users\Mahaliana\Documents\GitHub\Dentiste\Dentiste\bin\Debug\Dentiste.exe
+C:\Users\Mahaliana\Documents\GitHub\Dentiste\Dentiste\bin\Debug\Dentiste.pdb
+C:\Users\Mahaliana\Documents\GitHub\Dentiste\Dentiste\obj\Debug\Dentiste.csproj.AssemblyReference.cache
+C:\Users\Mahaliana\Documents\GitHub\Dentiste\Dentiste\obj\Debug\Dentiste.Properties.Resources.resources
+C:\Users\Mahaliana\Documents\GitHub\Dentiste\Dentiste\obj\Debug\Dentiste.csproj.GenerateResource.cache
+C:\Users\Mahaliana\Documents\GitHub\Dentiste\Dentiste\obj\Debug\Dentiste.csproj.CoreCompileInputs.cache
+C:\Users\Mahaliana\Documents\GitHub\Dentiste\Dentiste\obj\Debug\Dentiste.exe
+C:\Users\Mahaliana\Documents\GitHub\Dentiste\Dentiste\obj\Debug\Dentiste.pdb
