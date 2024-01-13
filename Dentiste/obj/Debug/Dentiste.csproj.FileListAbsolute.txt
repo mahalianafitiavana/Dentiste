@@ -40,3 +40,4 @@ C:\Users\Mahaliana\Documents\GitHub\Dentiste\Dentiste\bin\Debug\System.Threading
 C:\Users\Mahaliana\Documents\GitHub\Dentiste\Dentiste\bin\Debug\System.Threading.Tasks.Extensions.xml
 C:\Users\Mahaliana\Documents\GitHub\Dentiste\Dentiste\bin\Debug\System.ValueTuple.xml
 C:\Users\Mahaliana\Documents\GitHub\Dentiste\Dentiste\obj\Debug\Dentiste.csproj.CopyComplete
+C:\Users\Mahaliana\Documents\GitHub\Dentiste\Dentiste\obj\Debug\Dentiste.Acceuil.resources
