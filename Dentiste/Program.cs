@@ -17,12 +17,10 @@ namespace Dentiste
             /* Application.EnableVisualStyles();
              Application.SetCompatibleTextRenderingDefault(false);
              Application.Run(new Form1());*/
-            Client client = new Client("Mah", new DateTime(2003, 03, 03));
             Connexion c = new Connexion();
             c.connect();
-            client.insert(c);
+            Client.all(c);
             c.disconnect();
-            Console.WriteLine(client.Id);
         }
     }
 }
