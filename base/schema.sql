@@ -1,7 +1,7 @@
 -- id client sequence
 CREATE SEQUENCE idclient_seq START 1;
 
--- Créer la table CLIENT en utilisant la séquence
+-- Cr�er la table CLIENT en utilisant la s�quence
 CREATE TABLE CLIENT (
    idclient VARCHAR(20) DEFAULT 'CL00' || LPAD(nextval('idclient_seq')::TEXT, 4, '0'),
    Birth DATE,
@@ -9,15 +9,37 @@ CREATE TABLE CLIENT (
    PRIMARY KEY(idclient)
 );
 
+CREATE FUNCTION get_idclient()
+RETURNS VARCHAR(20)
+AS $$
+DECLARE
+    next_val INTEGER;
+    formatted_id VARCHAR(20);
+BEGIN
+    -- Obtenir la prochaine valeur de la s�quence
+    SELECT nextval('idclient_seq') INTO next_val;
+
+    -- Formater l'ID du client
+    formatted_id := 'CL00' || LPAD(next_val::TEXT, 4, '0');
+
+    -- Retourner l'ID format�
+    RETURN formatted_id;
+END;
+$$ LANGUAGE plpgsql;
+
+
 CREATE TABLE STATUS(
    note INTEGER,
    description VARCHAR(50) ,
    PRIMARY KEY(note)
 );
--- id visit sequnce
+
+
+
+-----------Visit ----------------
 CREATE SEQUENCE idvisit_seq START 1;
 
--- Créer la table VISIT en utilisant la séquence
+-- Cr�er la table VISIT en utilisant la s�quence
 CREATE TABLE VISIT (
    idvisit VARCHAR(20) DEFAULT 'VS00' || LPAD(nextval('idvisit_seq')::TEXT, 4, '0'),
    amount NUMERIC(18,2),
@@ -27,24 +49,52 @@ CREATE TABLE VISIT (
    FOREIGN KEY(idclient) REFERENCES CLIENT(idclient)
 );
 
+
+CREATE OR REPLACE FUNCTION get_idvisit()
+RETURNS VARCHAR(20)
+AS $$
+DECLARE
+    next_val INTEGER;
+    formatted_id VARCHAR(20);
+BEGIN
+    -- Obtenir la prochaine valeur de la s�quence
+    SELECT nextval('idvisit_seq') INTO next_val;
+
+    -- Formater l'ID de la visite
+    formatted_id := 'VS00' || LPAD(next_val::TEXT, 4, '0');
+
+    -- Retourner l'ID format�
+    RETURN formatted_id;
+END;
+$$ LANGUAGE plpgsql;
+
+
+
+
 CREATE TABLE TYPE(
    idtype INTEGER,
    nom VARCHAR(50) ,
-   PRIMARY KEY(idtype)
+   PRIMARY KEY(idtype)   
 );
+alter  table "type"  add column    idprice integer ;
+alter table type add foreign key(idprice) references price(idprice);
 
+
+-------TOOth---------
 CREATE TABLE TOOTH(
    idtooth INTEGER,
-   positions INTEGER,
-   idtype INTEGER NOT NULL,
-   PRIMARY KEY(idtooth),
-   FOREIGN KEY(idtype) REFERENCES TYPE(idtype)
+	 positions INTEGER,
+	idtype INTEGER NOT NULL,
+	idprix INTEGER NOT NULL,
+	PRIMARY KEY(idtooth),
+	FOREIGN KEY(idtype) REFERENCES TYPE(idtype),
+	FOREIGN KEY(idprix) REFERENCES PRIX(idprix)
 );
 
--- Créer la séquence pour idhistorique
+-- Cr�er la s�quence pour idhistorique
 CREATE SEQUENCE idhistorique_seq START 1;
 
--- Créer la table HISTOIRE en utilisant la séquence
+-- Cr�er la table HISTOIRE en utilisant la s�quence
 CREATE TABLE HISTORIQUE (
    idhistorique VARCHAR(50) DEFAULT 'H00' || LPAD(nextval('idhistorique_seq')::TEXT, 4, '0'),
    note INTEGER NOT NULL,
@@ -56,10 +106,10 @@ CREATE TABLE HISTORIQUE (
    FOREIGN KEY(idvisit) REFERENCES VISIT(idvisit)
 );
 
--- Créer la séquence pour idsoin
+-- Cr�er la s�quence pour idsoin
 CREATE SEQUENCE idsoin_seq START 1;
 
--- Créer la table SOIN en utilisant la séquence
+-- Cr�er la table SOIN en utilisant la s�quence
 CREATE TABLE SOIN (
    idsoin VARCHAR(50) DEFAULT 'S00' || LPAD(nextval('idsoin_seq')::TEXT, 4, '0'),
    type VARCHAR(50),
@@ -70,21 +120,26 @@ CREATE TABLE SOIN (
    FOREIGN KEY(idvisit) REFERENCES VISIT(idvisit)
 );
 
-CREATE TABLE PRIX(
-   idprix SERIAL,
-   remplacement NUMERIC(18,2)  ,
-   nettoyage NUMERIC(18,2)  ,
-   enlevement NUMERIC(18,2)  ,
-   reparation NUMERIC(18,2)  ,
-   idtooth INTEGER NOT NULL,
-   PRIMARY KEY(idprix),
+CREATE TABLE PRIce(
+   idprice SERIAL,
+   remplacement NUMERIC(18,2)  , // 0
+   nettoyage NUMERIC(18,2)  ,    // 1
+   enlevement NUMERIC(18,2)  ,   // 2
+   reparation NUMERIC(18,2)  ,   // 3 
+   PRIMARY KEY(idprice),
    FOREIGN KEY(idtooth) REFERENCES TOOTH(idtooth)
 );
 
--- Créer la séquence pour idsoin
+create table Params (
+    soinType int ,
+    notemin int ,
+    notemax int 
+);
+
+-- Cr�er la s�quence pour idsoin
 CREATE SEQUENCE idsoin_seq START 1;
 
--- Créer la table SOIN en utilisant la séquence
+-- Cr�er la table SOIN en utilisant la s�quence
 CREATE TABLE SOIN (
    idsoin VARCHAR(50) DEFAULT 'S00' || LPAD(nextval('idsoin_seq')::TEXT, 4, '0'),
    type VARCHAR(50),

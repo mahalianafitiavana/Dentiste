@@ -13,18 +13,21 @@ namespace Dentiste
         NpgsqlConnection connection;
         public NpgsqlConnection Connection { get => connection; set => connection = value; }
 
-        public void connect()
+        public bool connect()
         {
+            bool b = false;
             this.Connection = new NpgsqlConnection(this.database);
             this.Connection.Open();
             if (Connection.State == ConnectionState.Open)
             {
                 Console.WriteLine("Ouverture de la Connection à la base de données avec succcès");
+                b = true;
             }
             else
             {
                 throw new Exception("Erreur lors de la Connection à la base de données avec succcès");
             }
+            return b;
         }
         public void disconnect()
         {

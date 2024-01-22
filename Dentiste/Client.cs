@@ -29,36 +29,27 @@ namespace Dentiste
             {
                 bool isConnected = false;
                 if (c == null)
-                {
                     c = new Connexion();
                     c.connect();
                     isConnected = true;
-                }
                 string sql = "SELECT * FROM Client";
                 using (NpgsqlCommand command = new NpgsqlCommand(sql, c.Connection))
                 {
                     using (NpgsqlDataReader reader = command.ExecuteReader())
                     {
                         while (reader.Read())
-                        {
                             list.Add(new Client(reader["idclient"].ToString(), reader["name"].ToString(), (DateTime)reader["Birth"]));
                             // Faites quelque chose avec les valeurs (par exemple, les imprimer)
                             Console.WriteLine($"ID Client: {reader["idclient"]}, Nom: {reader["name"]}, Date de naissance: {(DateTime)reader["Birth"]}");
-                        }
                     }
                 }
-
                 if (isConnected)
-                {
                     c.disconnect();
-                }
             }
             catch (System.Exception)
             {
                 if (c != null)
-                {
                     c.disconnect();
-                }
                 throw;
             }
             return list;
@@ -66,39 +57,19 @@ namespace Dentiste
         public void insert(Connexion c)
         {
             NpgsqlTransaction transaction = null;
-            try
+            bool isConnected = false;
+            if (c == null)
+                c = new Connexion();
+                c.connect();
+                isConnected = true;
+            string sql = "select  insert_client('" + Nom + "', '" + Naissance.ToString("yyyy-MM-dd") + "')";
+            using (NpgsqlCommand command = new NpgsqlCommand(sql, c.Connection))
             {
-                bool isConnected = false;
-                if (c == null)
-                {
-                    c = new Connexion();
-                    c.connect();
-                    isConnected = true;
-                }
-                transaction = c.Connection.BeginTransaction();
-                string sql = "select  insert_client('" + Nom + "', '" + Naissance.ToString("yyyy-MM-dd") + "')";
-                using (NpgsqlCommand command = new NpgsqlCommand(sql, c.Connection))
-                {
-                    command.Transaction = transaction;
-                    this.Id = (string)command.ExecuteScalar();
-                }
-                transaction.Commit();
-
-                if (isConnected)
-                {
-                    c.disconnect();
-                }
+                command.Transaction = transaction;
+                this.Id = (string)command.ExecuteScalar();
             }
-            catch (System.Exception)
-            {
-                // En cas d'erreur, effectuer un rollback
-                transaction?.Rollback();
-                if (c != null)
-                {
-                    c.disconnect();
-                }
-                throw;
-            }
+            if (isConnected)
+                c.disconnect();
         }
 
     }

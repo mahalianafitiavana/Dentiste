@@ -17,7 +17,11 @@ namespace Dentiste
              Application.EnableVisualStyles();
              Application.SetCompatibleTextRenderingDefault(false);
              Application.Run(new Acceuil());
-            ;
+            /*Visit v = new Visit();
+            v.construirePK(null);
+            Console.WriteLine(v.Id);*/
+     
         }
+
     }
 }
