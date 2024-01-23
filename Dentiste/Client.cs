@@ -9,9 +9,7 @@ namespace Dentiste
         string id;
         string nom;
         DateTime naissance;
-
         public Client() { }
-
         public Client(string id,string nom, DateTime naissance)
         {
             this.id = id;
@@ -54,7 +52,7 @@ namespace Dentiste
             }
             return list;
         }
-        public void insert(Connexion c)
+        public void save(Connexion c)
         {
             NpgsqlTransaction transaction = null;
             bool isConnected = false;

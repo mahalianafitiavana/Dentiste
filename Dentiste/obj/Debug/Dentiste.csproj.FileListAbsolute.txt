@@ -42,5 +42,4 @@ C:\Users\Mahaliana\Documents\GitHub\Dentiste\Dentiste\bin\Debug\System.ValueTupl
 C:\Users\Mahaliana\Documents\GitHub\Dentiste\Dentiste\obj\Debug\Dentiste.csproj.CopyComplete
 C:\Users\Mahaliana\Documents\GitHub\Dentiste\Dentiste\obj\Debug\Dentiste.Acceuil.resources
 C:\Users\Mahaliana\Documents\GitHub\Dentiste\Dentiste\bin\Debug\Mouve.dll
-C:\Users\Mahaliana\Documents\GitHub\Dentiste\Dentiste\obj\Debug\Dentiste.ClientForm.resources
 C:\Users\Mahaliana\Documents\GitHub\Dentiste\Dentiste\obj\Debug\Dentiste.VisitForm.resources

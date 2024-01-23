@@ -211,6 +211,11 @@
             // dent11
             // 
             this.dent11.Location = new System.Drawing.Point(24, 188);
+            this.dent11.Maximum = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
             this.dent11.Name = "dent11";
             this.dent11.Size = new System.Drawing.Size(31, 20);
             this.dent11.TabIndex = 10;
@@ -223,9 +228,19 @@
             // dent12
             // 
             this.dent12.Location = new System.Drawing.Point(52, 188);
+            this.dent12.Maximum = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
             this.dent12.Name = "dent12";
             this.dent12.Size = new System.Drawing.Size(31, 20);
             this.dent12.TabIndex = 13;
+            this.dent12.Value = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
             // 
             // label7
             // 
@@ -239,9 +254,19 @@
             // dent13
             // 
             this.dent13.Location = new System.Drawing.Point(79, 188);
+            this.dent13.Maximum = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
             this.dent13.Name = "dent13";
             this.dent13.Size = new System.Drawing.Size(31, 20);
             this.dent13.TabIndex = 15;
+            this.dent13.Value = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
             // 
             // label8
             // 
@@ -255,9 +280,19 @@
             // dent14
             // 
             this.dent14.Location = new System.Drawing.Point(105, 188);
+            this.dent14.Maximum = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
             this.dent14.Name = "dent14";
             this.dent14.Size = new System.Drawing.Size(31, 20);
             this.dent14.TabIndex = 17;
+            this.dent14.Value = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
             // 
             // label9
             // 
@@ -271,9 +306,19 @@
             // dent15
             // 
             this.dent15.Location = new System.Drawing.Point(134, 188);
+            this.dent15.Maximum = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
             this.dent15.Name = "dent15";
             this.dent15.Size = new System.Drawing.Size(31, 20);
             this.dent15.TabIndex = 19;
+            this.dent15.Value = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
             // 
             // label10
             // 
@@ -287,9 +332,19 @@
             // dent16
             // 
             this.dent16.Location = new System.Drawing.Point(158, 188);
+            this.dent16.Maximum = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
             this.dent16.Name = "dent16";
             this.dent16.Size = new System.Drawing.Size(31, 20);
             this.dent16.TabIndex = 21;
+            this.dent16.Value = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
             // 
             // label11
             // 
@@ -303,9 +358,19 @@
             // dent17
             // 
             this.dent17.Location = new System.Drawing.Point(187, 188);
+            this.dent17.Maximum = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
             this.dent17.Name = "dent17";
             this.dent17.Size = new System.Drawing.Size(31, 20);
             this.dent17.TabIndex = 23;
+            this.dent17.Value = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
             // 
             // label12
             // 
@@ -319,9 +384,19 @@
             // dent18
             // 
             this.dent18.Location = new System.Drawing.Point(214, 188);
+            this.dent18.Maximum = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
             this.dent18.Name = "dent18";
             this.dent18.Size = new System.Drawing.Size(31, 20);
             this.dent18.TabIndex = 25;
+            this.dent18.Value = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
             // 
             // label13
             // 
@@ -335,37 +410,87 @@
             // dent28
             // 
             this.dent28.Location = new System.Drawing.Point(460, 188);
+            this.dent28.Maximum = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
             this.dent28.Name = "dent28";
             this.dent28.Size = new System.Drawing.Size(31, 20);
             this.dent28.TabIndex = 42;
+            this.dent28.Value = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
             // 
             // dent27
             // 
             this.dent27.Location = new System.Drawing.Point(433, 188);
+            this.dent27.Maximum = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
             this.dent27.Name = "dent27";
             this.dent27.Size = new System.Drawing.Size(31, 20);
             this.dent27.TabIndex = 40;
+            this.dent27.Value = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
             // 
             // dent26
             // 
             this.dent26.Location = new System.Drawing.Point(404, 188);
+            this.dent26.Maximum = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
             this.dent26.Name = "dent26";
             this.dent26.Size = new System.Drawing.Size(31, 20);
             this.dent26.TabIndex = 38;
+            this.dent26.Value = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
             // 
             // dent25
             // 
             this.dent25.Location = new System.Drawing.Point(380, 188);
+            this.dent25.Maximum = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
             this.dent25.Name = "dent25";
             this.dent25.Size = new System.Drawing.Size(31, 20);
             this.dent25.TabIndex = 36;
+            this.dent25.Value = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
             // 
             // dent24
             // 
             this.dent24.Location = new System.Drawing.Point(351, 188);
+            this.dent24.Maximum = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
             this.dent24.Name = "dent24";
             this.dent24.Size = new System.Drawing.Size(31, 20);
             this.dent24.TabIndex = 34;
+            this.dent24.Value = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
             // 
             // dent23
             // 
@@ -377,65 +502,155 @@
             // dent22
             // 
             this.dent22.Location = new System.Drawing.Point(298, 188);
+            this.dent22.Maximum = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
             this.dent22.Name = "dent22";
             this.dent22.Size = new System.Drawing.Size(31, 20);
             this.dent22.TabIndex = 30;
+            this.dent22.Value = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
             // 
             // dent21
             // 
             this.dent21.Location = new System.Drawing.Point(270, 188);
+            this.dent21.Maximum = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
             this.dent21.Name = "dent21";
             this.dent21.Size = new System.Drawing.Size(31, 20);
             this.dent21.TabIndex = 27;
+            this.dent21.Value = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
             // 
             // dent38
             // 
             this.dent38.Location = new System.Drawing.Point(215, 347);
+            this.dent38.Maximum = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
             this.dent38.Name = "dent38";
             this.dent38.Size = new System.Drawing.Size(31, 20);
             this.dent38.TabIndex = 59;
+            this.dent38.Value = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
             // 
             // dent37
             // 
             this.dent37.Location = new System.Drawing.Point(188, 347);
+            this.dent37.Maximum = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
             this.dent37.Name = "dent37";
             this.dent37.Size = new System.Drawing.Size(31, 20);
             this.dent37.TabIndex = 57;
+            this.dent37.Value = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
             // 
             // dent36
             // 
             this.dent36.Location = new System.Drawing.Point(159, 347);
+            this.dent36.Maximum = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
             this.dent36.Name = "dent36";
             this.dent36.Size = new System.Drawing.Size(31, 20);
             this.dent36.TabIndex = 55;
+            this.dent36.Value = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
             // 
             // dent35
             // 
             this.dent35.Location = new System.Drawing.Point(135, 347);
+            this.dent35.Maximum = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
             this.dent35.Name = "dent35";
             this.dent35.Size = new System.Drawing.Size(31, 20);
             this.dent35.TabIndex = 53;
+            this.dent35.Value = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
             // 
             // dent34
             // 
             this.dent34.Location = new System.Drawing.Point(106, 347);
+            this.dent34.Maximum = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
             this.dent34.Name = "dent34";
             this.dent34.Size = new System.Drawing.Size(31, 20);
             this.dent34.TabIndex = 51;
+            this.dent34.Value = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
             // 
             // dent33
             // 
             this.dent33.Location = new System.Drawing.Point(80, 347);
+            this.dent33.Maximum = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
             this.dent33.Name = "dent33";
             this.dent33.Size = new System.Drawing.Size(31, 20);
             this.dent33.TabIndex = 49;
+            this.dent33.Value = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
             // 
             // dent32
             // 
             this.dent32.Location = new System.Drawing.Point(53, 347);
+            this.dent32.Maximum = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
             this.dent32.Name = "dent32";
             this.dent32.Size = new System.Drawing.Size(31, 20);
             this.dent32.TabIndex = 47;
+            this.dent32.Value = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
             // 
             // valider
             // 
@@ -451,65 +666,155 @@
             // dent31
             // 
             this.dent31.Location = new System.Drawing.Point(25, 347);
+            this.dent31.Maximum = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
             this.dent31.Name = "dent31";
             this.dent31.Size = new System.Drawing.Size(31, 20);
             this.dent31.TabIndex = 44;
+            this.dent31.Value = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
             // 
             // dent48
             // 
             this.dent48.Location = new System.Drawing.Point(459, 346);
+            this.dent48.Maximum = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
             this.dent48.Name = "dent48";
             this.dent48.Size = new System.Drawing.Size(31, 20);
             this.dent48.TabIndex = 76;
+            this.dent48.Value = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
             // 
             // dent47
             // 
             this.dent47.Location = new System.Drawing.Point(432, 346);
+            this.dent47.Maximum = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
             this.dent47.Name = "dent47";
             this.dent47.Size = new System.Drawing.Size(31, 20);
             this.dent47.TabIndex = 74;
+            this.dent47.Value = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
             // 
             // dent46
             // 
             this.dent46.Location = new System.Drawing.Point(403, 346);
+            this.dent46.Maximum = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
             this.dent46.Name = "dent46";
             this.dent46.Size = new System.Drawing.Size(31, 20);
             this.dent46.TabIndex = 72;
+            this.dent46.Value = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
             // 
             // dent45
             // 
             this.dent45.Location = new System.Drawing.Point(379, 346);
+            this.dent45.Maximum = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
             this.dent45.Name = "dent45";
             this.dent45.Size = new System.Drawing.Size(31, 20);
             this.dent45.TabIndex = 70;
+            this.dent45.Value = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
             // 
             // dent44
             // 
             this.dent44.Location = new System.Drawing.Point(350, 346);
+            this.dent44.Maximum = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
             this.dent44.Name = "dent44";
             this.dent44.Size = new System.Drawing.Size(31, 20);
             this.dent44.TabIndex = 68;
+            this.dent44.Value = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
             // 
             // dent43
             // 
             this.dent43.Location = new System.Drawing.Point(324, 346);
+            this.dent43.Maximum = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
             this.dent43.Name = "dent43";
             this.dent43.Size = new System.Drawing.Size(31, 20);
             this.dent43.TabIndex = 66;
+            this.dent43.Value = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
             // 
             // dent42
             // 
             this.dent42.Location = new System.Drawing.Point(297, 346);
+            this.dent42.Maximum = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
             this.dent42.Name = "dent42";
             this.dent42.Size = new System.Drawing.Size(31, 20);
             this.dent42.TabIndex = 64;
+            this.dent42.Value = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
             // 
             // dent41
             // 
             this.dent41.Location = new System.Drawing.Point(269, 346);
+            this.dent41.Maximum = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
             this.dent41.Name = "dent41";
             this.dent41.Size = new System.Drawing.Size(31, 20);
             this.dent41.TabIndex = 61;
+            this.dent41.Value = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
             // 
             // label14
             // 
@@ -827,7 +1132,6 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "VisitForm";
             this.Text = "ConsulForm";
-            this.Load += new System.EventHandler(this.ConsulForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dent11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dent12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dent13)).EndInit();

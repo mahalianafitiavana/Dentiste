@@ -99,12 +99,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Client.cs" />
-    <Compile Include="ClientForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ClientForm.Designer.cs">
-      <DependentUpon>ClientForm.cs</DependentUpon>
-    </Compile>
+    <Compile Include="ClientManager.cs" />
     <Compile Include="Connexion.cs" />
     <Compile Include="Acceuil.cs">
       <SubType>Form</SubType>
@@ -112,6 +107,7 @@
     <Compile Include="Acceuil.Designer.cs">
       <DependentUpon>Acceuil.cs</DependentUpon>
     </Compile>
+    <Compile Include="IClientManager.cs" />
     <Compile Include="IVisitServiceSignature.cs" />
     <Compile Include="Visit.cs" />
     <Compile Include="VisitForm.cs">
@@ -128,9 +124,6 @@
     <Compile Include="VisitService.cs" />
     <EmbeddedResource Include="Acceuil.resx">
       <DependentUpon>Acceuil.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ClientForm.resx">
-      <DependentUpon>ClientForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="VisitForm.resx">
       <DependentUpon>VisitForm.cs</DependentUpon>

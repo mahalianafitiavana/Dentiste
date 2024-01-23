@@ -8,11 +8,10 @@ namespace Dentiste
 {
     public partial class VisitService : IVisitServiceSignature
     {
-        public VisitFormParams Build(Connexion connexion, int[][] notes)
+        public VisitFormParams Build(Connexion connexion, int[][] notes, Client client)
         {
             VisitFormParams para = new VisitFormParams();
-            para.Idclient = "CL000018";
-            Visit visit = new Visit(); visit.construirePK(connexion); visit.Dates = DateTime.Now ; visit.Idclient = "CL000018";
+            Visit visit = new Visit(); visit.construirePK(connexion); visit.Dates = DateTime.Now ; visit.Idclient = client.Id;
             List<Historic> list = new List<Historic>();
             for (int i = 0; i < notes.Length; i++)
             {
@@ -23,7 +22,7 @@ namespace Dentiste
                     Console.WriteLine("Note : "+ notes[i][j]+ " Dent"+ n + "  idvisit "+ visit.Id);
                 }
             }
-            para.Visit = visit; para.Historics = list;
+            para.Visit = visit; para.Historics = list; para.Idclient = client.Id;
             return para;
         }
 

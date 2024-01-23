@@ -9,6 +9,6 @@ namespace Dentiste
     public interface IVisitServiceSignature
     {
         void Save(Connexion connexion, VisitFormParams param);
-        VisitFormParams Build(Connexion connexion, int[][] notes);
+        VisitFormParams Build(Connexion connexion, int[][] notes, Client client);
     }
 }

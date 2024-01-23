@@ -10,10 +10,12 @@ namespace Dentiste
     {
         Visit visit;
         List<Historic> historics;
-        string idclient;
+        String client;
       
         public Visit Visit { get => visit; set => visit = value; }
         public List<Historic> Historics { get => historics; set => historics = value; }
-        public string Idclient { get => idclient; set => idclient = value; }
+        public String Idclient { get => client; set => client = value; }
+
+        
     }
 }

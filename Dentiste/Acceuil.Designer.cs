@@ -40,8 +40,19 @@
             this.reduire = new System.Windows.Forms.Panel();
             this.reduice = new System.Windows.Forms.Button();
             this.mobile = new System.Windows.Forms.Panel();
+            this.birth = new System.Windows.Forms.DateTimePicker();
+            this.oldclient = new System.Windows.Forms.Button();
+            this.newclient = new System.Windows.Forms.Button();
+            this.listclient = new System.Windows.Forms.ComboBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.name = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.navbar.SuspendLayout();
             this.reduire.SuspendLayout();
+            this.mobile.SuspendLayout();
             this.SuspendLayout();
             // 
             // navbar
@@ -184,10 +195,115 @@
             // 
             // mobile
             // 
+            this.mobile.Controls.Add(this.birth);
+            this.mobile.Controls.Add(this.oldclient);
+            this.mobile.Controls.Add(this.newclient);
+            this.mobile.Controls.Add(this.listclient);
+            this.mobile.Controls.Add(this.label5);
+            this.mobile.Controls.Add(this.label4);
+            this.mobile.Controls.Add(this.name);
+            this.mobile.Controls.Add(this.label3);
+            this.mobile.Controls.Add(this.label2);
+            this.mobile.Controls.Add(this.label1);
             this.mobile.Location = new System.Drawing.Point(266, 37);
             this.mobile.Name = "mobile";
             this.mobile.Size = new System.Drawing.Size(548, 529);
             this.mobile.TabIndex = 3;
+            // 
+            // birth
+            // 
+            this.birth.Location = new System.Drawing.Point(224, 198);
+            this.birth.Name = "birth";
+            this.birth.Size = new System.Drawing.Size(177, 20);
+            this.birth.TabIndex = 21;
+            // 
+            // oldclient
+            // 
+            this.oldclient.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.oldclient.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.oldclient.Location = new System.Drawing.Point(305, 421);
+            this.oldclient.Name = "oldclient";
+            this.oldclient.Size = new System.Drawing.Size(67, 23);
+            this.oldclient.TabIndex = 20;
+            this.oldclient.Text = "GO";
+            this.oldclient.UseVisualStyleBackColor = false;
+            // 
+            // newclient
+            // 
+            this.newclient.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.newclient.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.newclient.Location = new System.Drawing.Point(305, 251);
+            this.newclient.Name = "newclient";
+            this.newclient.Size = new System.Drawing.Size(67, 23);
+            this.newclient.TabIndex = 19;
+            this.newclient.Text = "ADD";
+            this.newclient.UseVisualStyleBackColor = false;
+            this.newclient.Click += new System.EventHandler(this.newclient_Click);
+            // 
+            // listclient
+            // 
+            this.listclient.FormattingEnabled = true;
+            this.listclient.Location = new System.Drawing.Point(231, 378);
+            this.listclient.Name = "listclient";
+            this.listclient.Size = new System.Drawing.Size(141, 21);
+            this.listclient.TabIndex = 18;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(150, 377);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(59, 20);
+            this.label5.TabIndex = 17;
+            this.label5.Text = "Name :";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(149, 198);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(50, 20);
+            this.label4.TabIndex = 16;
+            this.label4.Text = "Birth :";
+            // 
+            // name
+            // 
+            this.name.Location = new System.Drawing.Point(224, 141);
+            this.name.Name = "name";
+            this.name.Size = new System.Drawing.Size(177, 20);
+            this.name.TabIndex = 15;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(148, 139);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(59, 20);
+            this.label3.TabIndex = 14;
+            this.label3.Text = "Name :";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(224, 323);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(73, 25);
+            this.label2.TabIndex = 13;
+            this.label2.Text = "Client";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(197, 84);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(132, 25);
+            this.label1.TabIndex = 12;
+            this.label1.Text = "New CLient";
             // 
             // Acceuil
             // 
@@ -205,6 +321,8 @@
             this.Load += new System.EventHandler(this.Acceuil_Load);
             this.navbar.ResumeLayout(false);
             this.reduire.ResumeLayout(false);
+            this.mobile.ResumeLayout(false);
+            this.mobile.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -222,6 +340,16 @@
         private System.Windows.Forms.Button client;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel mobile;
+        private System.Windows.Forms.DateTimePicker birth;
+        private System.Windows.Forms.Button oldclient;
+        private System.Windows.Forms.Button newclient;
+        private System.Windows.Forms.ComboBox listclient;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox name;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
     }
 }
 
